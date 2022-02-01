@@ -1,0 +1,37 @@
+.all{
+    background-color:#bbff93bf;
+    border-radius: 1vw;
+    padding: 1vw;
+}
+.cursor{
+    font-size: 1.4vw;
+    cursor: pointer;
+    display: block;
+    flex-direction: column;
+    background-color: rgb(255, 145, 0);
+    padding: 1vw;
+    margin:1vw auto;
+    font-weight: bold;
+    border-radius: 0.65vw;
+    width: 40vw;
+}
+.cursor:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+    text-decoration: underline;
+}
+.cursor:focus{
+    border: 2px solid black;
+    box-shadow: 1px 1px 15px 4px red;
+}
+.text{
+    font-size: 1.5vw;
+    text-align: center;
+    background-color: black;
+    color: greenyellow;
+    padding: 0.2vw;
+    display: block;
+    width: 30vw;
+    margin: 1vw auto;
+    border-radius: 1vw;
+}

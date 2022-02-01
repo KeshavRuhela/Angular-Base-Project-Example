@@ -1,0 +1,20 @@
+<router-outlet></router-outlet>
+<!-- <a [routerLink]="[ '/regis' ]"> -->
+  <button id="mar" class="btn btn-lg btn-outline-primary"  (click)="open(mymodal)" >Send mail</button>
+  <!-- <button id="mar" class="btn btn-lg btn-outline-primary"  (click)="check();" >Send mail</button> -->
+<!-- </a> -->
+<a [routerLink]="[ '/login' ]">
+  <button class="btn btn-lg btn-outline-primary" id="mar">Login</button>
+</a>
+<a [routerLink]="[ '/signUp' ]">
+  <button class="btn btn-lg"  id="signUp">signUp</button>
+</a>
+
+<ng-template #mymodal let-modal>
+  
+    <registration-root></registration-root>
+ 
+</ng-template>
+
+
+  

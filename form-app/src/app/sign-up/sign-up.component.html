@@ -1,0 +1,22 @@
+<br> 
+                                         <h2 class="text-center">sign-Up</h2>
+<br>
+  <!-- ............................................................................................................. -->
+
+  <form [formGroup]="signUp" >
+      <input type="text"  formControlName="user_S_Name" class="form-control p-2 m-3 mt-1" style="width: 70vw; font-size: 1.4vw;" placeholder="User Name" >
+      <input type="email"  formControlName="user_S_Email" class="form-control p-2 m-3" style="width: 70vw; font-size: 1.4vw;" placeholder="E-mail ID" >
+      <input type="password"  formControlName="user_S_Pass" class="form-control p-2 m-3" style="width: 70vw; font-size: 1.4vw;" placeholder="Password" >
+      <button class="btn btn-danger form-control m-3 p-3 mb-0" style="width: 70vw; font-size: 1.4vw;">signUp</button>
+  </form>
+  <br>
+  <div class=""><strong>NOTE-</strong> sign-Up Is Nessesory For Sending Mail</div>
+  <br>
+  <!-- (ngSubmit)='sendMail()' [formGroup]='loginForm'  -->
+  <!-- <form novalidate class="form">
+    To: 
+    <input formControlName='email'
+           type="text"
+           class="form-control mt-1 mb-3"
+           placeholder="Enter Email"/>
+    </form> -->

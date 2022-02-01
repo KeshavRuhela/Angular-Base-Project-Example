@@ -1,0 +1,43 @@
+#btn{
+    position: relative;
+}
+#ClockContainer{
+    background-color: blue;
+    height: 40vw;
+    border: 2px solid black;
+    border-radius: 20vw;
+    box-shadow: 5px 5px 51px black;
+    width: 40vw;
+    margin: auto;
+    background: url('watch3.png') no-repeat center;
+    background-position: 0vw 0vw;
+    background-size: cover;
+    position: relative;
+}
+
+#Hour, #Minute, #Second{
+    background-color: black;
+    position: absolute;
+    top: 7.58vw;
+    left: 49.85vw;
+    transform-origin: bottom;
+}
+#Hour{
+    height: 9.6vw;
+    top: 10.59vw;
+    left: 19.9vw;
+    width: 0.50vw;
+}
+#Minute{
+    height: 12vw;
+    top: 8.2vw;
+    left: 19.9vw;
+    width: 0.50vw;
+}
+#Second{
+    height: 14vw;
+    top: 6.2vw;
+    left: 19.9vw;
+    width: 0.50vw;   
+}
+

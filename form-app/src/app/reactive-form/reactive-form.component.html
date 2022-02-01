@@ -1,0 +1,26 @@
+<!-- <p class="text-center">reactive-form works!</p>
+<input [formControl]='email'
+       type="text"
+       placeholder="Enter Email" />
+{{email.value| json}} -->
+<form (ngSubmit)='sendMail()' [formGroup]='loginForm' novalidate class="form">
+    To: 
+    <input formControlName='email'
+           type="text"
+           class="form-control mt-1 mb-3"
+           placeholder="Enter Email"/>
+    
+    Message :
+    <textarea formControlName='message'
+           class="form-control mb-5 "
+           style="width:auto; height:15vw;"
+           placeholder="Type your name">
+    </textarea> 
+    <button class="btn btn-danger">
+        Send Mail
+    </button>
+           
+</form>
+<!-- {{loginForm.value | json}}
+{{loginForm.status | json }} -->
+<br> 

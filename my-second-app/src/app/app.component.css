@@ -1,0 +1,45 @@
+#set{
+    justify-content: center;
+    margin: 0vw;
+    display: flex;
+}
+#icon1,#icon2,#icon3,#icon4{
+margin: 2vw;
+border-radius: 78px;
+height: 4vw;
+width: 4vw;
+transition-property: all;
+transition-duration: 3s;
+}
+#icon1:hover{
+    height: 5vw;
+    width: 5vw;
+} 
+#icon2:hover{
+    height: 5vw;
+    width: 5vw;
+}
+#icon3:hover{
+    height: 5vw;
+    width: 5vw;
+}
+#icon4:hover{
+    height: 5vw;
+    width: 5vw;
+}
+#icon1{
+background-color: aqua;
+
+}
+#icon2{
+    background-color: rgb(87, 38, 246);
+ 
+}
+#icon3{
+    background-color: rgb(2, 255, 44);
+   
+}
+#icon4{
+    background-color: rgb(255, 30, 0);
+  
+}

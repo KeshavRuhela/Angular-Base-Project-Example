@@ -1,0 +1,45 @@
+<!-- <router-outlet></router-outlet>
+<a [routerLink]="[ '/Back' ]">
+  <button id="Back">back</button>
+</a> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<a id="mainHeading">Welcome to Registration Site</a>
+<form name="itemForm">
+    <input type="text" required  name="Value"  [(ngModel)]="newItem.Value" class='set' placeholder="Enter Your name" >
+    <input type="text"   name="Value2" [(ngModel)]="newItem.Value2" class='set' placeholder="Enter Your Father's name" >
+    <input type="text"   name="Value3" [(ngModel)]="newItem.Value3" class='set' placeholder="Enter Your Mother's name" >
+    <input type="email"  name="Value4" [(ngModel)]="newItem.Value4" class='set' placeholder="Enter Your Email-Id" >
+    <input type="date"   name="Value5" [(ngModel)]="newItem.Value5" class='set' placeholder="Date of Birth" >
+    <input type="number" name="Value6" [(ngModel)]="newItem.Value6" class='set' placeholder="Enter Your Contact Number" >
+    <input type="submit" name="Value"  (click)="AddItem()" [disabled]="IsForUpdate == true"  id='set' value="Submit" >
+    
+  </form> 
+<div class="panel-body" style="text-align: -webkit-center;">  
+  <div *ngFor="let data of myItems;let f=index" class="Data">  
+  Appplicant Name:            <i class="answer">  {{data.Value}}   </i>        
+  Enter Your Father's name :  <i class="answer">  {{data.Value2}}  </i> 
+  Enter Your Mother's name :  <i class="answer">  {{data.Value3}}  </i> 
+  Enter Your Email-Id :       <i class="answer">  {{data.Value4}}  </i>     
+  Date of Birth :             <i class="answer">  {{data.Value5}}  </i>     
+  Enter Your Contact Number : <i class="answer">  {{data.Value6}}  </i>     
+  <a  (click)="DeleteItem(f)">  
+    <!-- <button id="delet">Delet</button>   -->
+    <i id="delete" class="fa">&#xf014;</i>
+  </a> 
+  <a>
+    <!-- <img src=""></img> -->
+    <!-- <input type="submit" value="Mail" name="del" (click)="openMailBoxPopup(data.Value4)"> -->
+    <i class="fa" id="mail" (click)="mail(content,data.Value4)">&#xf0e0;</i>
+  </a>  
+  <ng-template #content let-modal>
+    <app-reactive-form></app-reactive-form>
+  </ng-template>
+  </div>    
+  <div *ngIf="myItems.length == 0" class="Data">  
+    Items Are Empty !!!  
+  </div>
+  <a href="#" (click)="DeleteItemMultiple(f)">  
+    <button id="DeleteItemMultiple">Delet All</button>  
+  </a>   
+</div> 

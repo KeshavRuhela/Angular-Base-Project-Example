@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+#center{
+    background-color: red;
+    height: 1.5vw;
+    width: 1.5vw;
+    border-radius: 20vw;
+    position: absolute;
+    top: 19vw;
+    left: 19.16vw;
+    z-index: 1;
+    border: 2px solid white;
+}

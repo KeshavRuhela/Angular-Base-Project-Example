@@ -1,0 +1,24 @@
+<div *ngFor="let Compony of Componies">
+    <!-- <h1 *ngIf="Compony.Title">{{Compony.Title}}</h1>   -->
+    <h1 *ngIf="Compony.Title">{{Compony.Title}}</h1>
+    <a style="margin:2vw; display:inline-block; justify-content: center;">Men :&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; </a>
+    <div *ngFor="let product of Compony.ProductTypeMen" style="display:inline-block;">
+        <a href="#" (click)="Alert(Compony.name, product)"
+            style="text-decoration:none; color: brown; margin: 3vw;  background-color: burlywood; padding: 12px; ">
+            {{product}}
+        </a>
+    </div> <br>
+    <a style="margin:2vw; display:inline-block;">Women : &nbsp; &nbsp; &nbsp; </a>
+    <div *ngFor="let product of Compony.ProductTypeWomen" style="display:inline;">
+        <a href="#" (click)="Alert(Compony.name, product)"
+            style="text-decoration:none; color: brown; margin: 4vw; background-color: burlywood; padding: 12px; ">
+            {{product}}
+        </a>
+    </div>
+    <a style="margin:2vw; display:inline-block;">Description : </a>
+    <a href="#" (click)="DescriptionAlert(Compony.Description)"
+        style="text-decoration:none; font-size: 1.5vw; color: rgb(0, 61, 0); margin: 4vw; background-color:rgb(248, 186, 186); padding: 12px; ">
+        {{Compony.Description}}
+    </a>
+</div>
